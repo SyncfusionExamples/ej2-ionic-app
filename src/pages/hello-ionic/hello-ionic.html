@@ -1,0 +1,20 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+        <ion-title>Hello Ionic</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+    <ejs-grid #grid [dataSource]='data' [gridLines]="lines" allowPaging=true>
+        <e-columns>
+            <e-column field='OrderID' headerText='OrderID' width='150'></e-column>
+            <e-column field='ShipName' headerText='ShipName Name' width='170'></e-column>
+            <e-column field='ShipAddress' headerText='ShipAddress' width='170'></e-column>
+            <e-column field='ShipCity' headerText='ShipCity' width='120'></e-column>
+        </e-columns>
+    </ejs-grid>
+</ion-content>
